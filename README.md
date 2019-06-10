@@ -10,9 +10,7 @@ You - as a developer - can easily cast android screen with this library to Netwo
 * mMC264Recorder = new MC264ScreenRecorder();
 * mMC264Recorder.registerCallback( new MyMC264RecorderCallback() );
 * mMC264Recorder.init( this );
-<br>
 * mMC264Recorder.onActivityResult(requestCode, resultCode, data);
-<br>
 * mMC264Recorder.setCaptureSize( mDisplayWidth, mDisplayHeight );
 * mMC264Recorder.setDst(capDstStr);
 * mMC264Recorder.setLandscapeMode(true/false);
@@ -36,7 +34,7 @@ You - as a developer - can easily cast android screen with this library to Netwo
   <img src="./ScreenCastDemo-Portrait.png" width="350" height="720">
 </p>
 
-* App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
+* This App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
 <br>
 * Othre Demo App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
 

@@ -17,7 +17,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.appexample2.camerapreview.AutoFitTextureView
+    <com.iocaster.screencastdemoapp.camerapreview.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

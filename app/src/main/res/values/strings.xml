@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ScreenCastDemoApp</string>
+
+    <string name="screen_sharing_toggle">Toggle screen sharing</string>
+    <string name="cap_dst_ussage1">-y /sdcard/capture.mp4</string>
+    <string name="cap_dst_ussage2">-f mpegts udp://192.168.123.123:5555?pkt_size=1316&amp;buffer_size=655360</string>
+
+    <!-- camera preview -->
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <!-- notification -->
+    <!--<string name="new_message_notification_title_template">New message: %1$s</string>-->
+</resources>

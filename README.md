@@ -34,7 +34,7 @@ You - as a developer - can easily cast android screen with this library to Netwo
   <img src="./ScreenCastDemo-Portrait.png" width="350" height="720">
 </p>
 
-* This App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
+* This App on google play : https://play.google.com/store/apps/details?id=com.iocaster.screencastdemoapp
 <br>
 * Othre Demo App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
 

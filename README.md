@@ -19,7 +19,7 @@ You - as a developer - can easily cast android screen with this library to Netwo
 * mMC264Recorder.start();
 
 ### stop
-* mMC264Recorder.start();
+* mMC264Recorder.stop();
 
 ### release
 * mMC264Recorder.release();

@@ -55,7 +55,7 @@ public class ScreenRecorderNotification {
 //        final String text = res.getString(
 //                R.string.new_message_notification_placeholder_text_template, exampleString);
 
-        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
+        final NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "myNotiChannelId1")
 
                 // Set appropriate defaults for the notification light, sound,
                 // and vibration.
@@ -64,7 +64,7 @@ public class ScreenRecorderNotification {
 
                 // Set required fields, including the small icon, the
                 // notification title, and text.
-                .setSmallIcon(R.drawable.ic_stat_new_message)
+                .setSmallIcon(R.mipmap.ic_stat_new_message)
                 .setContentTitle(title)
 //                .setContentText(text)
 

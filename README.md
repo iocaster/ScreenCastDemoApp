@@ -38,6 +38,13 @@ You - as a developer - can easily cast android screen with this library to Netwo
 <br>
 * Othre Demo App on google play : https://play.google.com/store/apps/details?id=com.iocaster.ffmpegmc264demoapp
 
+
+## Class Diagram
+<p align="center">
+  <img src="./MC264ScreenRecorder.jpg">
+</p>
+
+
 <br>
 <br>
 

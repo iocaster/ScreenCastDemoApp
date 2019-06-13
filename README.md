@@ -25,7 +25,7 @@ You - as a developer - can easily cast android screen with this library to Netwo
 * mMC264Recorder.release();
 
 ## Limitations :
-* The running time is limited to 30 minutes. Contact me for the unlimited version.
+* The running time is limited to 30 minutes. Contact me for the unlimited version of FFmpegMC264 module including source.
 
 
 

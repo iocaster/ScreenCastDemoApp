@@ -28,7 +28,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.iocaster.screencastdemoapp.MainActivity2;
+import com.iocaster.screencastdemoapp.MainActivity3;
 import com.iocaster.screencastdemoapp.R;
 
 
@@ -159,7 +159,7 @@ public class CameraActivity extends AppCompatActivity {
         /*
          * relaunch screen capture main UI activity
          */
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, MainActivity3.class);
         startActivity(intent);
     }
 

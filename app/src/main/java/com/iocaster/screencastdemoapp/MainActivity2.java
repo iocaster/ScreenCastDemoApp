@@ -13,9 +13,9 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v4.app.ActivityCompat;
+//import android.support.v7.app.AlertDialog;
+//import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -26,6 +26,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.iocaster.screencastdemoapp.camerapreview.CameraActivity;
 
@@ -197,9 +201,16 @@ public class MainActivity2 extends AppCompatActivity
         PreferenceManager.getDefaultSharedPreferences(this).edit().putString("dst", dstStr ).apply();
     }
 
+    /*
+     * java.lang.SecurityException: Media projections require a foreground service of type ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION
+     * refer to : https://medium.com/@juliozynger/media-projection-and-audio-capture-1ca72e271e9c
+     *              --> https://github.com/julioz/AudioCaptureSample/blob/master/app/src/main/java/com/zynger/audiocapturesample/MainActivity.kt
+     * refer to : https://thdev.tech/androiddev/2020/05/01/Android-MediaProjection-New/
+     */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d(TAG, "---> onActivityResult() ..." );
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d(TAG, "---> onActivityResult() ...");
         mMC264Recorder.onActivityResult(requestCode, resultCode, data);
     }
 

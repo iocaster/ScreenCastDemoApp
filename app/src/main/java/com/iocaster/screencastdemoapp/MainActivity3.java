@@ -89,7 +89,7 @@ public class MainActivity3 extends AppCompatActivity {
         public void onStart() {
             Log.d(TAG, "MC264ScreenRecorder.Callback::onStart() ... " );
 
-            hideMe();
+            //hideMe(); //move to bottom
 
             Toast.makeText(mCtx, "stream started ...", Toast.LENGTH_LONG).show();
 
@@ -104,6 +104,8 @@ public class MainActivity3 extends AppCompatActivity {
                     intent.putExtra("req_landscape", 0);
                 }
                 startActivity(intent);
+            } else {
+                hideMe();
             }
         }
 

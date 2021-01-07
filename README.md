@@ -10,7 +10,8 @@ You - as a developer - can easily cast android screen with this library to Netwo
 * mMC264Recorder = new MC264ScreenRecorder();
 * mMC264Recorder.registerCallback( new MyMC264RecorderCallback() );
 * mMC264Recorder.init( this );
-* mMC264Recorder.onActivityResult(requestCode, resultCode, data);
+* mMC264Recorder.onActivityResult(requestCode, resultCode, data); -- for targetSdkVersion 28 or below
+* mMC264Recorder.startProjection(int resultCode, Intent data);    -- for targetSdkVersion 29 or above within foreground service
 * mMC264Recorder.setCaptureSize( mDisplayWidth, mDisplayHeight );
 * mMC264Recorder.setDst(capDstStr);
 * mMC264Recorder.setLandscapeMode(true/false);
@@ -23,10 +24,6 @@ You - as a developer - can easily cast android screen with this library to Netwo
 
 ### release
 * mMC264Recorder.release();
-
-## Limitations :
-* The running time is limited to 30 minutes. Contact me for the unlimited version of FFmpegMC264 module including source.
-
 
 
 ## Screenshot

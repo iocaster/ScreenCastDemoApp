@@ -164,7 +164,7 @@ public class MainActivity3 extends AppCompatActivity {
 //        chkMIC = findViewById(R.id.checkBox_mic);
         capDst = findViewById(R.id.editText_capDst);
 
-        String defaultDst = getResources().getString(R.string.cap_dst_ussage2);
+        String defaultDst = getResources().getString(R.string.cap_dst_ussage3);
         String savedDst = PreferenceManager.getDefaultSharedPreferences(this).getString("dst", defaultDst);
         capDst.setText( savedDst );
 

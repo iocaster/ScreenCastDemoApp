@@ -15,6 +15,11 @@ Press START button, then after about 15-seconds later the screen cast will begin
 And the sdp_file - /mnt/sdcard/rtp.sdp - is generated in your Android device.
 Take out the rtp.sdp file to your PC and remove the top line which contains 'SDP:'.
 And play the rtp.sdp file with VLC player.
+1-1) For RTP (2nd)
+      -f rtp_mpegts rtp://your_pc_ip:port
+      ex) -f rtp_mpegts rtp://192.168.10.10:1234
+Press START button, then after about 15-seconds later the screen cast will begin.
+And play VLC in your PC with rtp://@192.168.10.10:1234 or just rtp://@:1234.
 
 2) For UDP, ScreenCastDemo options can be :
     -f mpegts udp://your_pc_ip:port?pkc_size=1316
